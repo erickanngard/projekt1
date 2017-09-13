@@ -15,6 +15,7 @@ div.head{
     z-index: 1;
     position: fixed;
     background-color: red;
+    overflow: hidden;
 }
 
 .buttonStyle {
