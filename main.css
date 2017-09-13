@@ -10,6 +10,7 @@ div.head{
     width: 100%;
 }
 
+<<<<<<< HEAD
 element.style{
     padding: 128px 16px;
 
@@ -31,3 +32,35 @@ h3{
 div {
     display: block;
 }
+=======
+.headerimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://magtemplates.com/wp-content/uploads/2017/06/Programming-World-Map-Wallpaper.jpg");
+    min-height: 100%;
+}
+
+.topBar{
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    background-color: red;
+    overflow: hidden;
+}
+
+.buttonStyle {
+    letter-spacing: 3px;
+    white-space: normal;
+    padding: 16px;
+    border: none;
+    outline: none;
+    display: block;
+    float: left;
+}
+
+.ejmobil{
+    float: right;
+
+}
+>>>>>>> dd27f64c195cbe41967815d28d1654daaef6aed8
