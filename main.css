@@ -3,43 +3,34 @@ body {
     width: 100%;
     height: 100%;
 }
-
 div.head{
     background-color: red;
     height: 20%;
     width: 100%;
 }
-
-
 element.style{
     padding: 128px 16px;
 
 }
-
 element.style{
     margin-top: 64px;
 }
-
 .sida-greyscale{
     filter.grayscale(80%);
 }
-
 h3{
     font-size: 24px;
 
 }
-
 div {
     display: block;
 }
-
 .headerimg-1 {
     background-position: center;
     background-size: cover;
     background-image: url("https://magtemplates.com/wp-content/uploads/2017/06/Programming-World-Map-Wallpaper.jpg");
     min-height: 100%;
 }
-
 .topBar{
     top: 0;
     width: 100%;
@@ -61,16 +52,13 @@ div {
     display: block;
     float: left;
 }
-
 .ejmobil{
     float: right;
 
 }
-
 .header-text {
     color: black;
 }
-
 .headerimg-1 { 
     object-fit: cover;
     display:block;
@@ -88,7 +76,6 @@ div {
 .mobil{
     float: right;
 }
-
 div.sideBar{
 
     margin: 0;
@@ -100,7 +87,6 @@ div.sideBar{
     overflow: auto;
     ;
 }
-
 #sideBarid{
     list-style-type: none
 
