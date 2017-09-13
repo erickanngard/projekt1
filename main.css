@@ -9,3 +9,11 @@ div.head{
     height: 20%;
     width: 100%;
 }
+
+.headerimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://magtemplates.com/wp-content/uploads/2017/06/Programming-World-Map-Wallpaper.jpg");
+    min-height: 100%;
+}
+
