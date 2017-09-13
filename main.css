@@ -10,6 +10,29 @@ div.head{
     width: 100%;
 }
 
+<<<<<<< HEAD
+element.style{
+    padding: 128px 16px;
+
+}
+
+element.style{
+    margin-top: 64px;
+}
+
+.sida-greyscale{
+    filter.grayscale(80%);
+}
+
+h3{
+    font-size: 24px;
+
+}
+
+div {
+    display: block;
+}
+=======
 .headerimg-1 {
     background-position: center;
     background-size: cover;
@@ -40,7 +63,11 @@ div.head{
     float: right;
 
 }
+<<<<<<< HEAD
 
 .mobil{
     float: right;
 }
+=======
+>>>>>>> dd27f64c195cbe41967815d28d1654daaef6aed8
+>>>>>>> c44edecf86d892e7b64868f6227fabefa0d2dbe0
