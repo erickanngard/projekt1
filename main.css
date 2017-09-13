@@ -17,3 +17,26 @@ div.head{
     min-height: 100%;
 }
 
+.topBar{
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    background-color: red;
+    overflow: hidden;
+}
+
+.buttonStyle {
+    letter-spacing: 3px;
+    white-space: normal;
+    padding: 16px;
+    border: none;
+    outline: none;
+    display: block;
+    float: left;
+}
+
+.ejmobil{
+    float: right;
+
+}
