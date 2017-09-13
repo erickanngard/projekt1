@@ -26,6 +26,7 @@ element.style{
 
 h3{
     font-size: 24px;
+
 }
 
 div {
@@ -47,7 +48,10 @@ div {
     background-color: red;
     overflow: hidden;
 }
-
+.buttonStyle:hover{
+    background-color: black;
+    color: white;
+}
 .buttonStyle {
     letter-spacing: 3px;
     white-space: normal;
@@ -66,3 +70,32 @@ div {
 .mobil{
     float: right;
 }
+
+div.sideBar{
+
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    ;
+}
+
+#sideBarid{
+    list-style-type: none
+
+}
+.sideMeny{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-align: left;
+    }
+.sideMeny:hover{
+    background-color: gray;
+}
+a {
+    text-decoration: none;
+    }

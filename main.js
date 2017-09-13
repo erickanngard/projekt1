@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    $(".sideBar").hide();
     var win = $(window).width();
     if (win >= 820) { 
         $(".mobil").hide();
