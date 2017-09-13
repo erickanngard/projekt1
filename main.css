@@ -10,6 +10,28 @@ div.head{
     width: 100%;
 }
 
+
+element.style{
+    padding: 128px 16px;
+
+}
+
+element.style{
+    margin-top: 64px;
+}
+
+.sida-greyscale{
+    filter.grayscale(80%);
+}
+
+h3{
+    font-size: 24px;
+}
+
+div {
+    display: block;
+}
+
 .headerimg-1 {
     background-position: center;
     background-size: cover;
@@ -59,3 +81,6 @@ div.head{
     width: 100%; 
     color: white;
  }
+.mobil{
+    float: right;
+}
