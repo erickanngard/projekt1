@@ -1,18 +1,23 @@
+$(document).ready(function(){
 
-
-function screenSize () {
-    var sizeX = $(window).width();
-}
-
-function ifScreenMobil() {
-    var sizeX = $(window).width();
-    if( sizeX >890) {
-        $("mobil").hide();
-        $("ejMobil").show();
+    var win = $(window).width();
+    if (win >= 820) { 
+        $(".mobil").hide();
+        $(".ejMobil").show();
+     }
+    if (win <= 820) {  
+        $(".ejMobil").hide();
+        $(".mobil").show(); 
     }
-    else {
-        $("ejMobil").hide();
-        $("mobil").show();
-
-    }
-}
+    $(window).resize(function(){
+        var win = $(window).width();
+        if (win >= 820) { 
+            $(".mobil").hide();
+            $(".ejMobil").show();
+         }
+        if (win <= 820) {  
+            $(".ejMobil").hide();
+            $(".mobil").show(); 
+        }
+    });
+});
