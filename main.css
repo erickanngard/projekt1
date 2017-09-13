@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .head{
     background-color: red;
     size: 100% 50%;
