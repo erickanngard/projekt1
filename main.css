@@ -122,6 +122,10 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.textform {
+    min-width: 500px;
+}
+
 input[type=submit]:hover {
     background-color: green;
 }
@@ -130,6 +134,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: white;
     padding: 20px;
+    text-align: left;
 }
 
 .pageTeam{
@@ -150,3 +155,4 @@ input[type=submit]:hover {
     width: 30%;
     background-color: powderblue;
 }
+
