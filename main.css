@@ -91,7 +91,6 @@ a {
     color: black;
 }
 
-<<<<<<< HEAD
 input[type=text],select,textarea {
     width: 100%;
     padding: 12px;  
@@ -120,7 +119,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: white
     padding: 20px;
-=======
+}
 .pageTeam{
     text-align: center;
     display: inline;
@@ -138,5 +137,4 @@ input[type=submit]:hover {
     height: 90%;
     width: 30%;
     background-color: powderblue;
->>>>>>> ead0d6ee77514bc837bc78cca7dc0af29d71c8b5
 }
