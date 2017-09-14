@@ -94,6 +94,7 @@ a {
 .pageTeam{
     text-align: center;
     display: inline;
+    
 }
 .hanoProfil{
     height: 100%;
@@ -105,7 +106,16 @@ a {
 }
 
 .teamCard{
-    height: 90%;
-    width: 30%;
+    height: 70%;
+    width: 27%;
     background-color: powderblue;
+    float: left;
+    margin: 3%;
+    min-width: 250px;
+}
+.teamImg{
+    width: 90%; /* 24.3% av teamCard*/
+    height: 35%; /* 35 % av pageCard*/
+    margin: 5%;
+    object-fit: cover;
 }
