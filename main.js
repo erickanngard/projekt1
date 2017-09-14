@@ -3,10 +3,14 @@ $(document).ready(function(){
     $(".sideBar").hide();
 
     resizeForMobile();
+    resizeSetMarginTopBar();
 
     $(window).resize(function () {
         resizeForMobile();
+        resizeSetMarginTopBar();
+
     });
+    
     
     
       
@@ -37,4 +41,11 @@ function resizeForMobile() {
         $(".ejMobil").hide();
         $(".mobil").show(); 
     }
+}
+
+function resizeSetMarginTopBar(){
+
+    var marginTopBar = $(".topBar").outerHeight(true);
+    document.getElementById("sideBardiv").style.marginTop = marginTopBar;
+
 }
