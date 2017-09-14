@@ -92,14 +92,25 @@ a {
 }
 
 input[type=text],select,textarea {
-    width: 100%;
+    width: 50%;
     padding: 12px;  
     border: 1px solid #ccc; 
     border-radius: 4px; 
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical 
+    resize: vertical;
+}
+
+input[type=number] {
+    width: 50%;
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
 }
 
 input[type=submit] {
@@ -112,14 +123,15 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: green
+    background-color: green;
 }
 
 .container {
     border-radius: 5px;
-    background-color: white
+    background-color: white;
     padding: 20px;
 }
+
 .pageTeam{
     text-align: center;
     display: inline;
