@@ -60,3 +60,11 @@ function resizeSetMarginTopBar(){
 function isVisible(){
     $(element).is(":visible");
 }
+
+/*function resizeSetMarginTobilStart(){
+    
+        var marginStartImg = $(".TobilStart").outerHeight(true);
+        document.getElementById(".hanoProfil").style.marginTop = marginStartImg;
+        alert(marginStartImg);
+    
+}*/
