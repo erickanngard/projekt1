@@ -8,7 +8,7 @@ body {
 .headerimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("https://magtemplates.com/wp-content/uploads/2017/06/Programming-World-Map-Wallpaper.jpg");
+    background-image: url("http://www.softavion.com/wp-content/uploads/2015/12/68751019-software-wallpapers.jpg");
     min-height: 100%;
 }
 .topBar{
@@ -42,7 +42,8 @@ body {
 .headerimg-1 { 
     object-fit: cover;
     display:block;
-    width:100%; height:100%;
+    width:100%; 
+    height:100%;
     text-align: center;
  }
  
