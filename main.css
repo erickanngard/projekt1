@@ -5,11 +5,14 @@ body {
     height: 100%;
 }
 
+<<<<<<< HEAD
 div.head{
     background-color: red;
     height: 20%;
     width: 100%;
 }
+=======
+>>>>>>> 5bcf4d52074ce9066057ac1fd6711536176efcfb
 
 .headerimg-1 {
     background-position: center;
@@ -17,30 +20,67 @@ div.head{
     background-image: url("https://magtemplates.com/wp-content/uploads/2017/06/Programming-World-Map-Wallpaper.jpg");
     min-height: 100%;
 }
-
 .topBar{
-    top: 0;
+    height: 5%;
     width: 100%;
-    z-index: 1;
     position: fixed;
     background-color: red;
-    overflow: hidden;
+    z-index: 50;
+    
 }
-
+.buttonStyle:hover{
+    background-color: black;
+    color: white;
+}
 .buttonStyle {
     letter-spacing: 3px;
     white-space: normal;
-    padding: 16px;
+    height: 100%;
+    min-width: 10%;
     border: none;
     outline: none;
-    display: block;
     float: left;
+    min-height: 100%;
 }
-
 .ejmobil{
     float: right;
+}
+.header-text {
+    color: black;
+}
+.headerimg-1 { 
+    object-fit: cover;
+    display:block;
+    width:100%; height:100%;
+    text-align: center;
+ }
+ 
+ .titleP { 
+    position: absolute; 
+    top: 20%; 
+    width: 100%; 
+    color: white;
+ }
+.mobil{
+    float: right;
+}
+.sideBar{
+    background-color: black;
+    height: inherit;
+    float: right;
+    width: 20%;
+    z-index: 51;
+    position: fixed;
+    right: 0;
+    min-width: 100px;
+    opacity: 0.8;
+}
+.sideBarListStyle{
+    list-style-type: none;
+    padding: 0;
 
 }
+<<<<<<< HEAD
 
 .fa{
 
@@ -66,3 +106,17 @@ text-rendering: auto;
 
 
 
+=======
+.sideMeny{
+    display: block;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    }
+.sideMeny:hover{
+    background-color: gray;
+}
+a {
+    text-decoration: none;
+    }
+>>>>>>> 5bcf4d52074ce9066057ac1fd6711536176efcfb
