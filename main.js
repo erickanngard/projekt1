@@ -4,10 +4,12 @@ $(document).ready(function(){
 
     resizeForMobile();
     resizeSetMarginTopBar();
+   
 
     $(window).resize(function () {
         resizeForMobile();
         resizeSetMarginTopBar();
+        
 
     });
     
@@ -48,4 +50,13 @@ function resizeSetMarginTopBar(){
     var marginTopBar = $(".topBar").outerHeight(true);
     document.getElementById("sideBardiv").style.marginTop = marginTopBar;
 
+}
+
+/*function setSizeButton(){
+    var hightButton = $(".buttonStyle").outerHeight(true);
+    document.getElementsByClassName("buttonStyle").style.minWidth = hightButton;
+}*/
+
+function isVisible(){
+    $(element).is(":visible");
 }
