@@ -158,6 +158,7 @@ input[type=submit]:hover {
     float: left;
     margin: 3%;
     min-width: 250px;
+    box-shadow: 1px 1px 1px #888888;
 }
 .teamImg{
     width: 90%; /* 24.3% av teamCard*/
