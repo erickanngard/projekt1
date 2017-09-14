@@ -159,10 +159,41 @@ input[type=submit]:hover {
     margin: 3%;
     min-width: 250px;
     box-shadow: 1px 1px 1px #888888;
+    font-family: arial;
+    font-size: 2em;
+    font-style: italic;
 }
 .teamImg{
     width: 90%; /* 24.3% av teamCard*/
     height: 35%; /* 35 % av pageCard*/
     margin: 5%;
     object-fit: cover;
+}
+.diagram-right {
+    margin-right: 16px;
+}
+.diagram-back-grey {
+    width:30%;
+    color: lightgrey;
+}
+.diagram-procent-placing {
+    text-align: center;
+}
+.diagram-back-grey {
+    background-color: lightgrey;
+}
+.diagram-color-procent {
+    color: white;
+    background-color: #009688;
+    
+}
+.diagram-round-edge {
+    border-radius: 16px;
+}
+.diagram-heading-text{
+    font-style: italic;
+    font-size: 120%;
+}
+.language-procent {
+    text-align: center; 
 }
