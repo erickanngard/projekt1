@@ -12,11 +12,7 @@ $(document).ready(function(){
         
 
     });
-    
-    
-    
-      
-    
+       
 });
 
 function mobilMenyClicked(){
