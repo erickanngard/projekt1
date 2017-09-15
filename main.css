@@ -49,6 +49,7 @@ body {
 }
 .topLi{
     float: right;
+    margin-left: 1px;
 }
 .topIcon{
     height: 100%;
@@ -57,6 +58,7 @@ body {
     border: none;
     background-color: #333333;
     display: inline-block;
+    
 }
 .header-text {
     color: black;
