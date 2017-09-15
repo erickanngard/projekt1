@@ -16,7 +16,7 @@ body {
     height: 5%;
     width: 100%;
     position: fixed;
-    background-color: red;
+    background-color: #333333;
     z-index: 50;   
 }
 .buttonStyle:hover{
@@ -30,6 +30,8 @@ body {
     border: none;
     outline: none;
     float: left;
+    background-color: #333333;
+    color: white;
 }
 .ejmobil{
     float: right;
@@ -49,16 +51,18 @@ body {
 }
 .topLi{
     float: right;
-    margin-left: 1px;
+    margin-right: 6px;
 }
 .topIcon{
     height: 100%;
+    min-width: 40px;
     color: white;
     text-decoration: none;
     border: none;
     background-color: #333333;
     display: inline-block;
-    
+    text-align: center;
+    vertical-align: middle;   
 }
 .header-text {
     color: black;
@@ -144,17 +148,15 @@ input[type=submit]:hover {
     background-color: white;
     padding: 20px;
     text-align: left;
-    clear: both;
 }
 .pageTeam{
     padding: 50px 16px;
-    clear: both;
 }
 .teamHead{
     text-align: center;
 }
 .teamCard{
-    height: 50%;
+    height: 60%;
     width: 27%;
     background-color: powderblue;
     margin: 3%;
@@ -167,13 +169,11 @@ input[type=submit]:hover {
 }
 .teamImg{
     width: 100%; /* 27% av teamCard*/
-    height: 40%; /* 40 % av pageCard*/
+    height: 46%; /* 46 % av pageCard*/
     padding: none;
     object-fit: cover;
 }
-.diagram{
-    clear: both;
-}
+
 .diagram-right {
     margin-right: 16px;
 }
@@ -200,4 +200,8 @@ input[type=submit]:hover {
 }
 .language-procent {
     text-align: center; 
+}
+
+.closeBoth{
+    clear: both;
 }
