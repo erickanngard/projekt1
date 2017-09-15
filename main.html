@@ -15,17 +15,19 @@
                 
                 <div class="topBar">
                         
-                        <div class="projektKnapp">
-                            <button class="buttonStyle">Projekt</button>
-                        </div>
+                        <li id="topTitel"><a class="topIcon" href="#start">Projekt</a></li>
                         
                         <div class="ejMobil">
-                            <button class="buttonStyle">Start</button>
-                            <button class="buttonStyle">Grupp</button>
-                            <button class="buttonStyle">Kontakt</button>
-                            <button class="buttonStyle">Eric</button>
-                            <button class="buttonStyle">Hano</button>
-                            <button class="buttonStyle">Tobil</button>
+                           
+                            <ul class="topMeny">
+                                <li class="topLi"><a class="topIcon" href="#start">Start</a></li>
+                                <li class="topLi"><a class="topIcon" href="#team">Grupp</a></li>
+                                <li class="topLi"><a class="topIcon" href="#form">Kontakt</a></li>
+                                <li class="topLi"><a class="topIcon" href="#eric">Eric</a></li>
+                                <li class="topLi"><a class="topIcon" href="#hano">Hano</a></li>
+                                <li class="topLi"><a class="topIcon" href="#tobil">Tobil</a></li>
+                                <li class="topLi"><a class="topIcon" href="#skills">Skills</a></li>
+                            </ul>
                         </div>
                 
                         <div class="mobil">
@@ -36,11 +38,12 @@
                 <div class="sideBar" id="sideBardiv">
                         <ul class="sideBarListStyle">
                             <li><a class="sideMeny" href="#start">Start</a></li>
-                            <li><a class="sideMeny" href="#start">Grupp</a></li>
-                            <li><a class="sideMeny" href="#start">Kontakt</a></li>
-                            <li><a class="sideMeny" href="#start">Eric</a></li>
-                            <li><a class="sideMeny" href="#start">Hano</a></li>
-                            <li><a class="sideMeny" href="#start">Tobil</a></li>
+                            <li><a class="sideMeny" href="#team">Grupp</a></li>
+                            <li><a class="sideMeny" href="#form">Kontakt</a></li>
+                            <li><a class="sideMeny" href="#eric">Eric</a></li>
+                            <li><a class="sideMeny" href="#hano">Hano</a></li>
+                            <li><a class="sideMeny" href="#tobil">Tobil</a></li>
+                            <li><a class="sideMeny" href="#skills">Skills</a></li>
                         </ul>
                 </div>
                 
@@ -50,7 +53,7 @@
     
 
     <div id="pageContent">
-            <div class="pageStart">
+            <div class="pageStart" id="start">
                 <div class="headerimg-1" >
                         <h2 class="titleP">PROGRAMMERA MERA</h2>
                 </div> 
@@ -74,39 +77,77 @@
                 
                 
             </div>
-    </div>
-
-    <div class="container">
-        
-
-        <label for="firstname">Förnamn</label> 
-        <br>
-        <input class="textform" type="text" id="fname" name="firstnamefirst" 
-    placeholder="Ditt Förnamn">
-    <br>
-        <label for="email">E-post</label> 
-        <br>
-        <input class="textform" type="text" id="epost" name="emailadress" 
-    placeholder="Din E-post">
-    <br>    
-        <label for="lastname">Efternamn</label>
-        <br>
-        <input class="textform" type="text" id="lname" name="lastname"
-     placeholder="Ditt efternamn">
-     <br>
-        <label for="phone">Telefon</label>
-        <br>
-        <input class="textform" type="number" id="pnumber" name="phonenumber"
-    placeholder="Ange Telefonnummer">
-    <br>
-        <label for="subject">Eget Meddelande</label>
-        <br>
-        <textarea id="subject" name="subject" 
-    placeholder="Skriv ett eget meddelande" style="height:200px"></textarea>
-    <br>
-        <button class="buttonForm">Submit</button>
     
+
+            <div class="container" id="form">
+        
+                
+                <div>
+                    <label for="firstname">Förnamn</label> 
+                    <br>
+                    <input class="textform" type="text" id="fname" name="firstnamefirst" 
+                    placeholder="Ditt Förnamn">
+                </div>
+                <br>
+                    <label for="email">E-post</label> 
+                <br>
+                    <input class="textform" type="text" id="epost" name="emailadress" 
+                    placeholder="Din E-post">
+                <br>    
+                    <label for="lastname">Efternamn</label>
+                <br>
+                    <input class="textform" type="text" id="lname" name="lastname"
+                    placeholder="Ditt efternamn">
+                <br>
+                    <label for="phone">Telefon</label>
+                <br>
+                    <input class="textform" type="number" id="pnumber" name="phonenumber"
+                    placeholder="Ange Telefonnummer">
+                <br>
+                    <label for="subject">Eget Meddelande</label>
+                <br>
+                    <textarea  class="textform" id="subject" name="subject" 
+                    placeholder="Skriv ett eget meddelande" style="height:200px"></textarea>
+                <br>
+                    <button class="buttonForm">Submit</button>
+            </div>
+        <div class="diagram" id="skills">
+                <p class="diagram-heading-text"><b><i class="diagram-right"></i>Coding language skills</b></p>
+                <p>HTML</p>
+                <div class="diagram-back-grey diagram-round-edge">
+                  <div class="diagram-procent-placing diagram-round-edge diagram-color-procent" style="height:24px;width:80%">80%</div>
+                </div>
+                <p>JAVASCRIPT</p>
+                    <div class="diagram-back-grey diagram-round-edge">
+                  <div class=" diagram-procent-placing diagram-round-edge diagram-color-procent" style="height:24px;width:30%">
+                    <div class="diagram-procent-placing">30%</div>
+                  </div>
+                 </div>
+                <p>CSS</p>
+                <div class="diagram-back-grey diagram-round-edge">
+                  <div class=" diagram-procent-placing diagram-round-edge diagram-color-procent" style="height:24px;width:50%">50%</div>
+                </div>
+                <p>JQUERY</p>
+                <div class="diagram-back-grey diagram-round-edge">
+                  <div class="diagram-procent-placing diagram-round-edge diagram-color-procent" style="height:24px;width:70%">70%</div>
+                </div>
+                <br>
+
+                <p class="diagram-heading-text"><b><i class="diagram-right"></i>Languages</b></p>
+                <p>English</p>
+                <div class="diagram-back-grey diagram-round-edge">
+                  <div class="diagram-round-edge diagram-color-procent language-procent" style="height:24px;width:75%">75%</div>
+                </div>
+                <p>Spanish</p>
+                <div class="diagram-back-grey diagram-round-edge">
+                <div class="diagram-round-edge diagram-color-procent language-procent" style="height:24px;width:55%">55%</div>
+                </div>
+                <p>German</p>
+                <div class="diagram-back-grey diagram-round-edge">
+                <div class="diagram-round-edge diagram-color-procent language-procent" style="height:24px;width:25%">25%</div>
+            </div>
     </div>
+</div>
     
 </body>
 </html>
