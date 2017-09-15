@@ -4,11 +4,13 @@ $(document).ready(function(){
 
     resizeForMobile();
     resizeSetMarginTopBar();
+    sizeMobilButton();
    
 
     $(window).resize(function () {
         resizeForMobile();
         resizeSetMarginTopBar();
+        sizeMobilButton();
         
 
     });
@@ -27,7 +29,9 @@ $(document).ready(function(){
 });
 
 function mobilMenyClicked(){
-    $(".sideBar").show();
+    $(".sideBar").animate({
+        opacity: "toggle"
+    },500);
 
     /*$("#mobilMeny").toggle(
         function(){
@@ -80,4 +84,8 @@ function isVisible(){
     
 }*/
 
+function sizeMobilButton(){
+    var buttonHeight = $("#mobilMeny").outerHeight(true);
+    document.getElementById("mobilMeny").style.width = buttonHeight;
+}
 
