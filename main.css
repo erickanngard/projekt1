@@ -1,9 +1,6 @@
 body {
-   margin: 0px;
-   
+   margin: 0px; 
 }
-
-
 .headerimg-1 {
     background-position: center;
     background-size: cover;
@@ -20,8 +17,7 @@ body {
     width: 100%;
     position: fixed;
     background-color: red;
-    z-index: 50;
-    
+    z-index: 50;   
 }
 .buttonStyle:hover{
     background-color: black;
@@ -46,7 +42,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .topMeny {
     list-style-type: none;
     margin: 0;
@@ -92,7 +87,6 @@ body {
     padding: 0;
 
 }
-
 .sideMeny{
     display: block;
     color: white;
@@ -110,8 +104,6 @@ a {
     width: 100%;
     clear: both;
 }
-
-
 input[type=text],select,textarea {
     width: 50%;
     padding: 12px;  
@@ -122,7 +114,6 @@ input[type=text],select,textarea {
     margin-bottom: 16px; 
     resize: vertical;
 }
-
 input[type=number] {
     width: 50%;
     padding: 12px;  
@@ -133,7 +124,6 @@ input[type=number] {
     margin-bottom: 16px; 
     resize: vertical;
 }
-
 input[type=submit] {
     background-color: red;
     color: white;
@@ -142,22 +132,18 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
 .textform {
     min-width: 300px;
 }
-
 input[type=submit]:hover {
     background-color: green;
 }
-
 .container {
     background-color: white;
     padding: 20px;
     text-align: left;
     clear: both;
 }
-
 .pageTeam{
     padding: 50px 16px;
     clear: both;
@@ -165,7 +151,6 @@ input[type=submit]:hover {
 .teamHead{
     text-align: center;
 }
-
 .teamCard{
     height: 50%;
     width: 27%;
@@ -184,7 +169,6 @@ input[type=submit]:hover {
     padding: none;
     object-fit: cover;
 }
-
 .diagram{
     clear: both;
 }
@@ -203,8 +187,7 @@ input[type=submit]:hover {
 }
 .diagram-color-procent {
     color: white;
-    background-color: #009688;
-    
+    background-color: #009688; 
 }
 .diagram-round-edge {
     border-radius: 16px;

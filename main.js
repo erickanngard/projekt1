@@ -32,15 +32,6 @@ function mobilMenyClicked(){
     $(".sideBar").animate({
         opacity: "toggle"
     },100);
-
-    /*$("#mobilMeny").toggle(
-        function(){
-            $("#sideBardiv").css("left", "0px");
-        },
-        function(){
-            $("#sideBardiv").css("left", "200px");
-        }
-    );*/
 }  
 
 function resizeForMobile() {
@@ -66,23 +57,6 @@ function resizeSetMarginTopBar(){
     document.getElementById("sideBardiv").style.marginTop = marginTopBar;
 
 }
-
-/*function setSizeButton(){
-    var hightButton = $(".buttonStyle").outerHeight(true);
-    document.getElementsByClassName("buttonStyle").style.minWidth = hightButton;
-}*/
-
-function isVisible(){
-    $(element).is(":visible");
-}
-
-/*function resizeSetMarginTobilStart(){
-    
-        var marginStartImg = $(".TobilStart").outerHeight(true);
-        document.getElementById(".hanoProfil").style.marginTop = marginStartImg;
-        alert(marginStartImg);
-    
-}*/
 
 function sizeMobilButton(){
     var buttonHeight = $("#mobilMeny").outerHeight(true);
