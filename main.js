@@ -31,7 +31,7 @@ $(document).ready(function(){
 function mobilMenyClicked(){
     $(".sideBar").animate({
         opacity: "toggle"
-    },500);
+    },100);
 
     /*$("#mobilMeny").toggle(
         function(){
