@@ -4,11 +4,13 @@ $(document).ready(function(){
 
     resizeForMobile();
     resizeSetMarginTopBar();
+    sizeMobilButton();
    
 
     $(window).resize(function () {
         resizeForMobile();
         resizeSetMarginTopBar();
+        sizeMobilButton();
         
 
     });
@@ -27,16 +29,9 @@ $(document).ready(function(){
 });
 
 function mobilMenyClicked(){
-    $(".sideBar").show();
-
-    /*$("#mobilMeny").toggle(
-        function(){
-            $("#sideBardiv").css("left", "0px");
-        },
-        function(){
-            $("#sideBardiv").css("left", "200px");
-        }
-    );*/
+    $(".sideBar").animate({
+        opacity: "toggle"
+    },100);
 }  
 
 function resizeForMobile() {
@@ -63,21 +58,9 @@ function resizeSetMarginTopBar(){
 
 }
 
-/*function setSizeButton(){
-    var hightButton = $(".buttonStyle").outerHeight(true);
-    document.getElementsByClassName("buttonStyle").style.minWidth = hightButton;
-}*/
-
-function isVisible(){
-    $(element).is(":visible");
+function sizeMobilButton(){
+    var buttonHeight = $("#mobilMeny").outerHeight(true);
+    document.getElementById("mobilMeny").style.width = buttonHeight;
 }
 
-/*function resizeSetMarginTobilStart(){
-    
-        var marginStartImg = $(".TobilStart").outerHeight(true);
-        document.getElementById(".hanoProfil").style.marginTop = marginStartImg;
-        alert(marginStartImg);
-    
-}*/
-
-
+fgrfwfew

@@ -1,10 +1,7 @@
 
 body {
-   margin: 0px;
-   
+   margin: 0px; 
 }
-
-
 .headerimg-1 {
     background-position: center;
     background-size: cover;
@@ -20,9 +17,8 @@ body {
     height: 5%;
     width: 100%;
     position: fixed;
-    background-color: red;
-    z-index: 50;
-    
+    background-color: #333333;
+    z-index: 50;   
 }
 .buttonStyle:hover{
     background-color: black;
@@ -32,11 +28,11 @@ body {
     letter-spacing: 3px;
     white-space: normal;
     height: 100%;
-    min-width: 10%;
     border: none;
     outline: none;
     float: left;
-    min-height: 100%;
+    background-color: #333333;
+    color: white;
 }
 .ejmobil{
     float: right;
@@ -49,7 +45,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .topMeny {
     list-style-type: none;
     margin: 0;
@@ -57,14 +52,18 @@ body {
 }
 .topLi{
     float: right;
+    margin-right: 6px;
 }
 .topIcon{
     height: 100%;
+    min-width: 40px;
     color: white;
     text-decoration: none;
     border: none;
     background-color: #333333;
     display: inline-block;
+    text-align: center;
+    vertical-align: middle;   
 }
 .header-text {
     color: black;
@@ -95,7 +94,6 @@ body {
     padding: 0;
 
 }
-
 .sideMeny{
     display: block;
     color: white;
@@ -113,8 +111,6 @@ a {
     width: 100%;
     clear: both;
 }
-
-
 input[type=text],select,textarea {
     width: 50%;
     padding: 12px;  
@@ -125,7 +121,6 @@ input[type=text],select,textarea {
     margin-bottom: 16px; 
     resize: vertical;
 }
-
 input[type=number] {
     width: 50%;
     padding: 12px;  
@@ -136,7 +131,6 @@ input[type=number] {
     margin-bottom: 16px; 
     resize: vertical;
 }
-
 input[type=submit] {
     background-color: red;
     color: white;
@@ -145,32 +139,25 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
 .textform {
     min-width: 300px;
 }
-
 input[type=submit]:hover {
     background-color: green;
 }
-
 .container {
     background-color: white;
     padding: 20px;
     text-align: left;
-    clear: both;
 }
-
 .pageTeam{
     padding: 50px 16px;
-    clear: both;
 }
 .teamHead{
     text-align: center;
 }
-
 .teamCard{
-    height: 50%;
+    height: 60%;
     width: 27%;
     background-color: powderblue;
     margin: 3%;
@@ -183,13 +170,9 @@ input[type=submit]:hover {
 }
 .teamImg{
     width: 100%; /* 27% av teamCard*/
-    height: 40%; /* 40 % av pageCard*/
+    height: 46%; /* 46 % av pageCard*/
     padding: none;
     object-fit: cover;
-}
-
-.diagram{
-    clear: both;
 }
 .diagram-right {
     margin-right: 16px;
@@ -206,8 +189,7 @@ input[type=submit]:hover {
 }
 .diagram-color-procent {
     color: white;
-    background-color: #009688;
-    
+    background-color: #009688; 
 }
 .diagram-round-edge {
     border-radius: 16px;
@@ -218,4 +200,8 @@ input[type=submit]:hover {
 }
 .language-procent {
     text-align: center; 
+}
+
+.closeBoth{
+    clear: both;
 }
