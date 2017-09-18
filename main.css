@@ -1,5 +1,6 @@
 body {
    margin: 0px; 
+   background-color: powderblue;
 }
 #headerimg-1 {
     background-position: center;
@@ -68,7 +69,7 @@ body {
     color: black;
 }
  
- .titleP { 
+.titleP { 
     position: absolute; 
     top: 20%; 
     width: 100%; 
@@ -147,9 +148,17 @@ input[type=submit]:hover {
     background-color: white;
     padding: 20px;
     text-align: left;
+    margin: 3%;
 }
 .pageTeam{
     padding: 50px 16px;
+    background-color: white;
+    margin: 3%;
+}
+
+.teamCardSpace{
+    height: 100%;
+    width: 100%;
 }
 .teamHead{
     text-align: center;
@@ -173,7 +182,7 @@ input[type=submit]:hover {
     object-fit: cover;
 }
 .diagram-back-grey {
-    width:35%;
+    width:90%;
     color: lightgrey;
 }
 .diagram-procent-placing {
@@ -207,21 +216,22 @@ input[type=submit]:hover {
     margin-bottom: 10px;
     height: 30%;
 }
-.profile-pic
-{
+.profile-pic {
     margin: -90px 10px 0px 50px;
-    z-index: 9;
-    width: 20%; 
+    width: 21%; 
 }
 .profile-page-text {
     font-weight: 500;
     font-size:17px;
     font-style: italic;
-    width: 45%;
-    padding: 5%;
+    width: 90%;
+    padding: 1%;
+    margin: 3%;
+    margin-bottom: 0%;
 }
 .privateProfile {
-    margin-top:2%;
+    margin : 3%;
+    background-color: white;
 }
 
 .imgSlides{
@@ -245,4 +255,17 @@ input[type=submit]:hover {
     opacity: 80%;
     float: right;
 }
-.diagram {}
+
+.profile-diagram{
+    width: 95%;
+    height: 50%;
+    padding: 1%;
+    margin: 3%;
+}
+
+.diagramStyle{
+    width: 40%;
+    float: left;
+    padding: 1%;
+    margin: 1%;
+}
