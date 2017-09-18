@@ -193,9 +193,7 @@ input[type=submit]:hover {
 .language-procent {
     text-align: center; 
 }
-.
-
-.closeBoth{
+.closeBoth {
     clear: both;
 }
 .body
@@ -219,7 +217,7 @@ input[type=submit]:hover {
     font-weight: 500;
     font-size:17px;
     font-style: italic;
-    width: 33.3333333333333333333333333333333333333%;
+    width: 45%;
     padding: 5%;
 }
 .privateProfile {
@@ -246,4 +244,5 @@ input[type=submit]:hover {
     border-radius: 0 3px 3px 0;
     opacity: 80%;
     float: right;
-  }
+}
+.diagram {}
