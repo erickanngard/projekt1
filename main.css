@@ -207,87 +207,24 @@ input[type=submit]:hover {
 }
 
 .Portfoliosida{
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-   
+    padding: 50px 16px;
+   text-align: center;
 
 }
-
-h7,h8{
-    line-height: 2;
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-weight: 400;
-    margin: 10px 0;
-}
-
-
-.Thisruta>img {
-    margin-right:auto
-    margin-left: auto;
-}
-
-.Thisruta>img {
-
-    display: block;
-    max-width: 100%;
-    height: auto; 
-}
+.ThisRuta{
+    height: 55%;
+    width:33%;
+    margin: 2%
+    text-align:center;
+    float: left;
+    }
 
 
-
-
-
-.Thisruta{
-
-    width: 25%;
-  
+.portfoliobild {
+    width: 60%;
+    height: 45%
+    object-filt:cover;
     
 }
-.Thisruta{
-    float: center;
-}
-
-
-
-
-.row{
-    margin-right: -5px;
-    margin-left: -5px;
-}
-
-.Kolumn{
-    display: block;
-    padding: 4px;
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    -webkit-transition: border .2s ease-in-out;
-    -o-transition: border .2s ease-in-out;
-    transition: border .2s ease-in-out;
-}
-
-img {
-    border-style: none;
-    vertical-align: middle;
-    border: 0;
-}
-
-
-h7{
-    font-size: 10%;
-
-}
-
-p {
-     display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-}
-
 
 
