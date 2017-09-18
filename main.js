@@ -61,6 +61,5 @@ function resizeSetMarginTopBar(){
 function sizeMobilButton(){
     var buttonHeight = $("#mobilMeny").outerHeight(true);
     document.getElementById("mobilMeny").style.width = buttonHeight;
-}
 
-fgrfwfew
+}

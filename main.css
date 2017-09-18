@@ -173,11 +173,8 @@ input[type=submit]:hover {
     padding: none;
     object-fit: cover;
 }
-.diagram-right {
-    margin-right: 16px;
-}
 .diagram-back-grey {
-    width:30%;
+    width:35%;
     color: lightgrey;
 }
 .diagram-procent-placing {
@@ -188,10 +185,7 @@ input[type=submit]:hover {
 }
 .diagram-color-procent {
     color: white;
-    background-color: #009688; 
-}
-.diagram-round-edge {
-    border-radius: 16px;
+    background-color: blue;
 }
 .diagram-heading-text{
     font-style: italic;
@@ -200,7 +194,35 @@ input[type=submit]:hover {
 .language-procent {
     text-align: center; 
 }
+.
 
 .closeBoth{
     clear: both;
+}
+.body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.private-profile-page img.background-pic{
+    z-index: 0;
+    width: 100%;  
+    margin-bottom: 10px;
+    height: 30%;
+}
+.profile-pic
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 20%; 
+}
+.profile-page-text {
+    font-weight: 500;
+    font-size:17px;
+    font-style: italic;
+    width: 33.3333333333333333333333333333333333333%;
+    padding: 5%;
+}
+.privateProfile {
+    margin-top:2%;
 }
