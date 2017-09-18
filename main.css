@@ -219,6 +219,7 @@ input[type=submit]:hover {
 .profile-pic {
     margin: -90px 10px 0px 50px;
     width: 21%; 
+    height: 40%;
 }
 .profile-page-text {
     font-weight: 500;
@@ -268,4 +269,14 @@ input[type=submit]:hover {
     float: left;
     padding: 1%;
     margin: 1%;
+}
+.background-pic2 {
+    z-index: 0;
+    width: 100%;  
+    margin-bottom: 10px;
+    height: 30%;
+}
+.profile-pic2 {
+    margin: -90px 10px 0px 50px;
+    width: 21%; 
 }
