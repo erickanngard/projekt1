@@ -5,6 +5,7 @@ $(document).ready(function(){
     resizeForMobile();
     resizeSetMarginTopBar();
     sizeMobilButton();
+    imgSlidesFunction();
    
 
     $(window).resize(function () {
@@ -14,7 +15,10 @@ $(document).ready(function(){
         
 
     });
-    $("a").on('click', function(event) {
+    
+    /*https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll*/ 
+});
+$("a").on('click', function(event) {
             if (this.hash !== "") {
               event.preventDefault();
               var hash = this.hash;
@@ -25,8 +29,6 @@ $(document).ready(function(){
               });
             } 
           });
-    /*https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll*/ 
-});
 
 function mobilMenyClicked(){
     $(".sideBar").animate({
@@ -62,4 +64,22 @@ function sizeMobilButton(){
     var buttonHeight = $("#mobilMeny").outerHeight(true);
     document.getElementById("mobilMeny").style.width = buttonHeight;
 }
+var slideIndex = 0;
 
+function imgSlidesFunction(n) {
+  var i;
+  var slides = document.getElementsByClassName("imgSlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(imgSlidesFunction, 3000);
+}
+
+function stopSlideShow(){
+    clearTimeout(slideIndex);
+}

@@ -1,7 +1,7 @@
 body {
    margin: 0px; 
 }
-.headerimg-1 {
+#headerimg-1 {
     background-position: center;
     background-size: cover;
     background-image: url("http://www.softavion.com/wp-content/uploads/2015/12/68751019-software-wallpapers.jpg");
@@ -108,7 +108,6 @@ a {
 .pageStart {
     height: 60%;
     width: 100%;
-    clear: both;
 }
 input[type=text],select,textarea {
     width: 50%;
@@ -205,3 +204,25 @@ input[type=submit]:hover {
 .closeBoth{
     clear: both;
 }
+
+.imgSlides{
+    display: none;
+}
+
+.imgSlidesImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.stopButton {
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    opacity: 80%;
+    float: right;
+  }
