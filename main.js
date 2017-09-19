@@ -64,6 +64,8 @@ function sizeMobilButton(){
     var buttonHeight = $("#mobilMeny").outerHeight(true);
     document.getElementById("mobilMeny").style.width = buttonHeight;
 }
+
+/* Bild spel nedan */
 var slideIndex = 0;
 
 function imgSlidesFunction(n) {
@@ -82,4 +84,5 @@ function imgSlidesFunction(n) {
 
 function stopSlideShow(){
     clearTimeout(slideIndex);
+    debugger;
 }
