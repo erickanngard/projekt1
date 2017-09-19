@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
     $(".sideBar").hide();
-
     resizeForMobile();
     resizeSetMarginTopBar();
     sizeMobilButton();
@@ -13,7 +12,6 @@ $(document).ready(function(){
         resizeSetMarginTopBar();
         sizeMobilButton();
         
-
     });
     
     /*https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll*/ 
@@ -84,5 +82,4 @@ function imgSlidesFunction(n) {
 
 function stopSlideShow(){
     clearTimeout(slideIndex);
-    debugger;
 }
