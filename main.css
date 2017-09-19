@@ -1,8 +1,9 @@
 
 body {
    margin: 0px; 
+   background-color: powderblue;
 }
-.headerimg-1 {
+#headerimg-1 {
     background-position: center;
     background-size: cover;
     background-image: url("http://www.softavion.com/wp-content/uploads/2015/12/68751019-software-wallpapers.jpg");
@@ -69,7 +70,7 @@ body {
     color: black;
 }
  
- .titleP { 
+.titleP { 
     position: absolute; 
     top: 20%; 
     width: 100%; 
@@ -109,7 +110,6 @@ a {
 .pageStart {
     height: 60%;
     width: 100%;
-    clear: both;
 }
 input[type=text],select,textarea {
     width: 50%;
@@ -149,9 +149,17 @@ input[type=submit]:hover {
     background-color: white;
     padding: 20px;
     text-align: left;
+    margin: 3%;
 }
 .pageTeam{
     padding: 50px 16px;
+    background-color: white;
+    margin: 3%;
+}
+
+.teamCardSpace{
+    height: 100%;
+    width: 100%;
 }
 .teamHead{
     text-align: center;
@@ -174,11 +182,8 @@ input[type=submit]:hover {
     padding: none;
     object-fit: cover;
 }
-.diagram-right {
-    margin-right: 16px;
-}
 .diagram-back-grey {
-    width:30%;
+    width:90%;
     color: lightgrey;
 }
 .diagram-procent-placing {
@@ -189,10 +194,7 @@ input[type=submit]:hover {
 }
 .diagram-color-procent {
     color: white;
-    background-color: #009688; 
-}
-.diagram-round-edge {
-    border-radius: 16px;
+    background-color: blue;
 }
 .diagram-heading-text{
     font-style: italic;
@@ -201,30 +203,101 @@ input[type=submit]:hover {
 .language-procent {
     text-align: center; 
 }
+.
 
 .closeBoth{
     clear: both;
 }
 
 .Portfoliosida{
-    padding: 50px 16px;
-   text-align: center;
+ text-align: center;
+ height: 75%;
+ 
+ margin: 3%;
+ background-color: white;
 
 }
 .ThisRuta{
     height: 55%;
-    width:33%;
-    margin: 2%
+    width:29%;
+    margin: 2%;
     text-align:center;
     float: left;
+    background-color: powderblue;
     }
 
 
 .portfoliobild {
-    width: 60%;
-    height: 45%
-    object-filt:cover;
-    
+    width: 85%;
+    height: 45%;
+    object-fit: contain;
+        margin-top: 1%;
+ }
+
+
+.body
+{
+    font-family: 'Open Sans', sans-serif;
 }
 
+.private-profile-page img.background-pic{
+    z-index: 0;
+    width: 100%;  
+    margin-bottom: 10px;
+    height: 30%;
+}
+.profile-pic
+{
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 20%; 
+}
+.profile-page-text {
+    font-weight: 500;
+    font-size:17px;
+    font-style: italic;
+    width: 90%;
+    padding: 1%;
+    margin: 3%;
+    margin-bottom: 0%;
+}
+.privateProfile {
+    margin : 3%;
+    background-color: white;
+}
 
+.imgSlides{
+    display: none;
+}
+
+.imgSlidesImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.stopButton {
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    opacity: 80%;
+    float: right;
+}
+
+.profile-diagram{
+    width: 95%;
+    height: 50%;
+    padding: 1%;
+    margin: 3%;
+}
+
+.diagramStyle{
+    width: 40%;
+    float: left;
+    padding: 1%;
+    margin: 1%;
+}
