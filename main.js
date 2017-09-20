@@ -5,7 +5,7 @@ $(document).ready(function(){
     resizeSetMarginTopBar();
     sizeMobilButton();
     imgSlidesFunction();
-    initialize ();
+    initialize();
    
 
     $(window).resize(function () {
