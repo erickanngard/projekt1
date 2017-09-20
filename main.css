@@ -308,13 +308,11 @@ input[type=submit]:hover {
     margin: -90px 10px 0px 50px;
     width: 21%; 
 }
-<<<<<<< HEAD
 .formtopic {
     font-style: italic; 
     font-size: 20px;
-=======
+}
 
 .boxShadow{
     box-shadow: 0px 3px 13px 2px rgba(0,0,0,0.41);
->>>>>>> 5be9f15566b9f17ec17268b20f4a102e46fd1921
 }
