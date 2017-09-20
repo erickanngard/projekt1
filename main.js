@@ -5,6 +5,7 @@ $(document).ready(function(){
     resizeSetMarginTopBar();
     sizeMobilButton();
     imgSlidesFunction();
+    initialize ();
    
 
     $(window).resize(function () {
@@ -41,7 +42,7 @@ function resizeForMobile() {
         $(".ejMobil").show();
         $(".sideBar").hide();
         $(".teamCard").width("27%");
-        $(".textform").width("50%");
+        $(".textform").width("30%");
     }
     if (win <= 820) {  
         $(".ejMobil").hide();
@@ -119,3 +120,12 @@ function ajaxGet(){
 
     })
 }*/
+function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng (59.254276, 15.24923),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }   
