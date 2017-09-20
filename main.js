@@ -42,13 +42,11 @@ function resizeForMobile() {
         $(".ejMobil").show();
         $(".sideBar").hide();
         $(".teamCard").width("27%");
-        $(".textform").width("30%");
     }
     if (win <= 820) {  
         $(".ejMobil").hide();
         $(".mobil").show();
         $(".teamCard").width("94%");
-        $(".textform").width("72%"); 
     }
 }
 
