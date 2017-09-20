@@ -1,3 +1,4 @@
+
 body {
    margin: 0px; 
    background-color: powderblue;
@@ -79,7 +80,7 @@ body {
     float: right;
 }
 .sideBar{
-    background-color: black;
+    background-color: 333333;
     height: inherit;
     float: right;
     width: 20%;
@@ -101,7 +102,7 @@ body {
     text-align: left;
     }
 li a:hover{
-    background-color: gray;
+    background-color: black;
 }
 a {
     text-decoration: none;
@@ -205,6 +206,33 @@ input[type=submit]:hover {
 .closeBoth {
     clear: both;
 }
+
+.Portfoliosida{
+ text-align: center;
+ height: 75%;
+ 
+ margin: 3%;
+ background-color: white;
+
+}
+.ThisRuta{
+    height: 55%;
+    width:29%;
+    margin: 2%;
+    text-align:center;
+    float: left;
+    background-color: powderblue;
+    }
+
+
+.portfoliobild {
+    width: 85%;
+    height: 45%;
+    object-fit: contain;
+        margin-top: 1%;
+ }
+
+
 .body
 {
     font-family: 'Open Sans', sans-serif;
@@ -248,10 +276,10 @@ input[type=submit]:hover {
 .stopButton {
     cursor: pointer;
     width: auto;
-    padding: 10px;
+    padding: 3px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 0 3px 3px 0;
     opacity: 80%;
     float: right;
@@ -280,7 +308,13 @@ input[type=submit]:hover {
     margin: -90px 10px 0px 50px;
     width: 21%; 
 }
+<<<<<<< HEAD
 .formtopic {
     font-style: italic; 
     font-size: 20px;
+=======
+
+.boxShadow{
+    box-shadow: 0px 3px 13px 2px rgba(0,0,0,0.41);
+>>>>>>> 5be9f15566b9f17ec17268b20f4a102e46fd1921
 }
