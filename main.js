@@ -126,4 +126,14 @@ function initialize() {
         };
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
-      }   
+}   
+
+function ajaxGet(){
+    $.ajax({
+        url: "https://api.github.com/search/repositories?q=javascript,+sort=stars&order=desc"
+    }).done(function (data){
+           for (var item in data.items){
+               $(document.body).append("<p>" + item.full_name + "</p>");
+           }
+    });
+}
