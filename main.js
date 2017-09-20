@@ -83,3 +83,39 @@ function imgSlidesFunction(n) {
 function stopSlideShow(){
     clearTimeout(slideIndex);
 }
+
+/*
+function ajaxHanoGet(){
+
+    var i;
+    $.ajax('https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc', {
+        success: (data) => {
+            $(document)alert("<p>" + item.full_name + "</p>":any)
+            /*
+            data.items.for(i = 0; i < 5; i++ ){
+                function (item) {
+                    $(document)
+                }
+            }
+
+        },
+        error: (err) => {
+            /* gör något vid error 
+        }
+
+    });
+}
+/*
+
+function ajaxGet(){
+    $.ajax({
+        url: "https://api.github.com/search/repositories?q=javascript,+sort=stars&order=desc"
+    }).done(function (data){
+        data.items.for(var index = 0; index < 5; index++) {
+            (function (item) {
+            $(document.body).append("<p>" + item.full_name + "</p>")
+            });
+        };
+
+    })
+}*/
