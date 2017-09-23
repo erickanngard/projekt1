@@ -128,13 +128,23 @@ function initialize() {
             mapOptions);
 }   
 
+var arrayOfAjax = new Array; 
+var corentdate = new Date();
+
+
 function ajaxGet(){
+    var indexOfArray = 0;
+   
     $.ajax({
         url: "https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc"
     }).done(function (data){
            for (var item in data.items){
-               if( data.created_at > corentdate){
-                   /*  kolla om array är 5 eller mindre, lägg i array */
+               if( item.created_at > corentdate){
+                  if (arrayOfAjax.length>5){
+                      arrayOfAjax[indexOfArray] = item;
+                      indexOfArray++;
+                  }
+                /*  kolla om array är 5 eller mindre, lägg i array */
                }
                $(document.body).append("<p>" + item.full_name + "</p>");
            }
