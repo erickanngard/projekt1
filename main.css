@@ -120,6 +120,9 @@ input[type=text],select,textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical;
+    font-style: arial;
+    font-size: 16px;
+    
 }
 input[type=number] {
     width: 90%;
@@ -130,6 +133,9 @@ input[type=number] {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical;
+    font-style: arial;
+    font-size: 16px;
+    
 }
 input[type=submit] {
     background-color: red;
@@ -328,12 +334,11 @@ input[type=text] {
     background-color: white;
     transition: width 0.3s ease-in-out;
     font-style: bold;
-    padding: 9px;
+    padding: 11px;
     font-family: arial;
-    font-size: 20px;
+
 
 }
-
 input[type=text]:focus {
     width: 37%;
 }
