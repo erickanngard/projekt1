@@ -130,9 +130,12 @@ function initialize() {
 
 function ajaxGet(){
     $.ajax({
-        url: "https://api.github.com/search/repositories?q=javascript,+sort=stars&order=desc"
+        url: "https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc"
     }).done(function (data){
            for (var item in data.items){
+               if( data.created_at > corentdate){
+                   /*  kolla om array är 5 eller mindre, lägg i array */
+               }
                $(document.body).append("<p>" + item.full_name + "</p>");
            }
     });
