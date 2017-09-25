@@ -6,6 +6,9 @@ $(document).ready(function(){
     sizeMobilButton();
     imgSlidesFunction();
     initialize();
+    appendCSSTopList();
+    appendJSTopList();
+    
    
 
     $(window).resize(function () {
@@ -128,25 +131,51 @@ function initialize() {
             mapOptions);
 }   
 
-var arrayOfAjax = new Array; 
-var corentdate = new Date();
+
+var lastWeek = new Date();
+lastWeek.setDate(lastWeek.getDate() - 7);
+var stringLastWeek = lastWeek.toISOString().slice(0,10);
 
 
-function ajaxGet(){
+function ajaxGet(url){
     var indexOfArray = 0;
-   
+    var count = 0;
+    var resultItems = []
+    console.log(stringLastWeek);
     $.ajax({
-        url: "https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc"
-    }).done(function (data){
-           for (var item in data.items){
-               if( item.created_at > corentdate){
-                  if (arrayOfAjax.length>5){
-                      arrayOfAjax[indexOfArray] = item;
-                      indexOfArray++;
-                  }
-                /*  kolla om array är 5 eller mindre, lägg i array */
-               }
-               $(document.body).append("<p>" + item.full_name + "</p>");
-           }
-    });
+        url: url+stringLastWeek,/*yyyy-mm-dd */
+        success: function (data){
+            var items = data.items;
+            for (var i = 0; i < items.length && (i < 5) ; i++) {
+                resultItems.push(items[i])
+                console.log(items[i])
+            };
+            console.log("Length of resultItems = " + resultItems.length + ". Content = " + resultItems)
+            //return resultItems;
+        },
+        complete: function () {
+            return resultItems;
+        }
+    }); 
+}
+
+/*asynkront gör att de inte funkar i forloopen*/
+
+function appendJSTopList(){
+    var list = ajaxGet("https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc&created:>=")
+    for (var i = 0; i < list.length; i++){
+        $(document.getElementById("teamJS")).append("<p> Namn: " + list[i].name + ", Stars: " + list[i].stargazers_count + ", Owner: " + list[i].owner.login + "</p>" + "<br>");
+        
+    }
+}
+
+function appendCSSTopList() {
+    ajaxGet("https://api.github.com/search/repositories?q=language:css&sort=stars&order=desc&created:>=", function (list){
+        console.log(list);
+        for (var i = 0; i < list.length; i++){
+            $(document.getElementById("teamCSS")).append("<p> Namn: " + list[i].name + ", Stars: " + list[i].stargazers_count + ", Owner: " + list[i].owner.login + "</p>" + "<br>");
+            
+        }
+    })
+    
 }
