@@ -6,6 +6,7 @@ $(document).ready(function(){
     sizeMobilButton();
     imgSlidesFunction();
     initialize();
+    stopSlideShow();
     /*appendCSSTopList();
     appendJSTopList();*/
     
@@ -66,61 +67,33 @@ function sizeMobilButton(){
 }
 
 /* Bild spel nedan */
-var slideIndex = 0;
 
-function imgSlidesFunction(n) {
-  var i;
-  var slides = document.getElementsByClassName("imgSlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(imgSlidesFunction, 3000);
+
+var slideIndex = 0;
+var slideTimer = 2500;
+var interval;
+
+function imgSlidesFunction() {
+    var i;
+    var slides = document.getElementsByClassName("imgSlides");
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
 }
+
+interval = setInterval(imgSlidesFunction, slideTimer);
 
 function stopSlideShow(){
-    clearTimeout(slideIndex);
-}
-
-/*
-function ajaxHanoGet(){
-
-    var i;
-    $.ajax('https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc', {
-        success: (data) => {
-            $(document)alert("<p>" + item.full_name + "</p>":any)
-            /*
-            data.items.for(i = 0; i < 5; i++ ){
-                function (item) {
-                    $(document)
-                }
-            }
-
-        },
-        error: (err) => {
-            /* gör något vid error 
-        }
-
+    var stopButton = document.getElementById("stopButton");
+    stopButton.addEventListener("click", function (){
+        clearInterval(interval);
     });
 }
-/*
 
-function ajaxGet(){
-    $.ajax({
-        url: "https://api.github.com/search/repositories?q=javascript,+sort=stars&order=desc"
-    }).done(function (data){
-        data.items.for(var index = 0; index < 5; index++) {
-            (function (item) {
-            $(document.body).append("<p>" + item.full_name + "</p>")
-            });
-        };
-
-    })
-}*/
 function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng (59.254276, 15.24923),
