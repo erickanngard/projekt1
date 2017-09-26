@@ -7,8 +7,8 @@ $(document).ready(function(){
     imgSlidesFunction();
     initialize();
     stopSlideShow();
-    /*appendCSSTopList();
-    appendJSTopList();*/
+    appendCSSTopList();
+    appendJSTopList();
     
    
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
         
     });
     
-    /*https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll*/ 
+
 });
 $("a").on('click', function(event) {
             if (this.hash !== "") {
@@ -108,8 +108,8 @@ function initialize() {
 var lastWeek = new Date();
 lastWeek.setDate(lastWeek.getDate() - 7);
 var stringLastWeek = lastWeek.toISOString().slice(0,10);
-
 /*
+
 function ajaxGet(url){
     var indexOfArray = 0;
     var count = 0;
@@ -131,25 +131,44 @@ function ajaxGet(url){
         }
     }); 
 }
+*/
 
-/*asynkront gör att de inte funkar i forloopen*/
-/*
 function appendJSTopList(){
-    var list = ajaxGet("https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc&created:>=")
-    for (var i = 0; i < list.length; i++){
-        $(document.getElementById("teamJS")).append("<p> Namn: " + list[i].name + ", Stars: " + list[i].stargazers_count + ", Owner: " + list[i].owner.login + "</p>" + "<br>");
-        
-    }
+    var url = "https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc&created:>=";
+    var indexOfArray = 0;
+    var count = 0;
+    var resultItems = []
+    $.ajax({
+        url: url+stringLastWeek,/*yyyy-mm-dd */
+        success: function (data){
+            var items = data.items;
+            for (var i = 0; i < items.length && (i < 5) ; i++) {
+                $(document.getElementById("teamJS")).append("<p> Namn: " + items[i].name + ", Stars: " + items[i].stargazers_count + ", Owner: " + items[i].owner.login + "</p>" + "<br>")
+            };
+        },
+        complete: function () {
+            return;
+        }
+    }); 
 }
 
 function appendCSSTopList() {
-    ajaxGet("https://api.github.com/search/repositories?q=language:css&sort=stars&order=desc&created:>=", function (list){
-        console.log(list);
-        for (var i = 0; i < list.length; i++){
-            $(document.getElementById("teamCSS")).append("<p> Namn: " + list[i].name + ", Stars: " + list[i].stargazers_count + ", Owner: " + list[i].owner.login + "</p>" + "<br>");
-            
-        }
-    })
     
+    var url = "https://api.github.com/search/repositories?q=language:css&sort=stars&order=desc&created:>=";
+    var indexOfArray = 0;
+    var count = 0;
+    var resultItems = []
+    $.ajax({
+        url: url+stringLastWeek,/*yyyy-mm-dd */
+        success: function (data){
+            var items = data.items;
+            for (var i = 0; i < items.length && (i < 5) ; i++) {
+                $(document.getElementById("teamCSS")).append("<p> Namn: " + items[i].name + ", Stars: " + items[i].stargazers_count + ", Owner: " + items[i].owner.login + "</p>" + "<br>")
+            };
+        },
+        complete: function () {
+            return;
+        }
+    }); 
 }
-*/
+
