@@ -6,8 +6,8 @@ $(document).ready(function(){
     sizeMobilButton();
     imgSlidesFunction();
     initialize();
-    appendCSSTopList();
-    appendJSTopList();
+    /*appendCSSTopList();
+    appendJSTopList();*/
     
    
 
@@ -136,14 +136,14 @@ var lastWeek = new Date();
 lastWeek.setDate(lastWeek.getDate() - 7);
 var stringLastWeek = lastWeek.toISOString().slice(0,10);
 
-
+/*
 function ajaxGet(url){
     var indexOfArray = 0;
     var count = 0;
     var resultItems = []
     console.log(stringLastWeek);
     $.ajax({
-        url: url+stringLastWeek,/*yyyy-mm-dd */
+        url: url+stringLastWeek,/*yyyy-mm-dd *//*
         success: function (data){
             var items = data.items;
             for (var i = 0; i < items.length && (i < 5) ; i++) {
@@ -160,7 +160,7 @@ function ajaxGet(url){
 }
 
 /*asynkront gör att de inte funkar i forloopen*/
-
+/*
 function appendJSTopList(){
     var list = ajaxGet("https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc&created:>=")
     for (var i = 0; i < list.length; i++){
@@ -179,3 +179,4 @@ function appendCSSTopList() {
     })
     
 }
+*/

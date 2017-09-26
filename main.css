@@ -164,6 +164,25 @@ input[type=submit]:hover {
     height: 100%;
     width: 100%;
 }
+.teamButton{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 6px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.teamButton:hover{
+    background-color: white;
+    color: black;
+}
 .teamHead{
     text-align: center;
 }
