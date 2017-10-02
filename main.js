@@ -5,7 +5,6 @@ $(document).ready(function(){
     resizeSetMarginTopBar();
     sizeMobilButton();
     imgSlidesFunction();
-    initialize();
     stopSlideShow();
     appendCSSTopList();
     appendJSTopList();
@@ -94,16 +93,6 @@ function stopSlideShow(){
     });
 }
 
-function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng (59.254276, 15.24923),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map-body"),
-            mapOptions);
-}   
-
 
 var lastWeek = new Date();
 lastWeek.setDate(lastWeek.getDate() - 7);
@@ -143,7 +132,7 @@ function appendJSTopList(){
         success: function (data){
             var items = data.items;
             for (var i = 0; i < items.length && (i < 5) ; i++) {
-                $(document.getElementById("teamJS")).append("<p> Namn: " + items[i].name + ", Stars: " + items[i].stargazers_count + ", Owner: " + items[i].owner.login + "</p>" + "<br>")
+                $(document.getElementById("teamJS")).append("<p> Namn: " + "<a href='"+items[i].html_url+"'>"+  items[i].name  +"</a>"+ ", Stars: " + items[i].stargazers_count + ", Owner: " +"<a href='"+items[i].owner.html_url+"'>"+  items[i].owner.login + "</a>"+"</p>" + "<br>")
             };
         },
         complete: function () {
@@ -151,6 +140,7 @@ function appendJSTopList(){
         }
     }); 
 }
+
 
 function appendCSSTopList() {
     
@@ -163,7 +153,7 @@ function appendCSSTopList() {
         success: function (data){
             var items = data.items;
             for (var i = 0; i < items.length && (i < 5) ; i++) {
-                $(document.getElementById("teamCSS")).append("<p> Namn: " + items[i].name + ", Stars: " + items[i].stargazers_count + ", Owner: " + items[i].owner.login + "</p>" + "<br>")
+                $(document.getElementById("teamCSS")).append("<p> Namn: " + "<a href='"+items[i].html_url+"'>"+  items[i].name  +"</a>"+ ", Stars: " + items[i].stargazers_count + ", Owner: " +"<a href='"+items[i].owner.html_url+"'>"+  items[i].owner.login + "</a>"+"</p>" + "<br>")
             };
         },
         complete: function () {
