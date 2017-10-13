@@ -79,7 +79,6 @@ $(document).ready(function(){
     
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none"; 
-          slides[i].style.height = "100%";
         }
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1} 
@@ -99,30 +98,7 @@ $(document).ready(function(){
     var lastWeek = new Date();
     lastWeek.setDate(lastWeek.getDate() - 7);
     var stringLastWeek = lastWeek.toISOString().slice(0,10);
-    /*
-    
-    function ajaxGet(url){
-        var indexOfArray = 0;
-        var count = 0;
-        var resultItems = []
-        console.log(stringLastWeek);
-        $.ajax({
-            url: url+stringLastWeek,/*yyyy-mm-dd *//*
-            success: function (data){
-                var items = data.items;
-                for (var i = 0; i < items.length && (i < 5) ; i++) {
-                    resultItems.push(items[i])
-                    console.log(items[i])
-                };
-                console.log("Length of resultItems = " + resultItems.length + ". Content = " + resultItems)
-                //return resultItems;
-            },
-            complete: function () {
-                return resultItems;
-            }
-        }); 
-    }
-    */
+
     
     function appendJSTopList(){
         var url = "https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc&created:>=";
@@ -180,8 +156,7 @@ $(document).ready(function(){
         var lnameElement = document.getElementById("lname");
         var epostElement = document.getElementById("epost");
         var pnumberElement = document.getElementById("pnumber");
-        var subjectElement = document.getElementById("subject");
-    
+
             fnameElement.addEventListener("keyup", function(){
             validate(fnameElement, /[a-z]{2,15}/);
         });
@@ -195,8 +170,4 @@ $(document).ready(function(){
         pnumberElement.addEventListener("keyup", function(){
             validate(pnumberElement, /\b\d{3}[-.]?\d{3}[-.]?\d{4}\b/);
         });
-        subjectElement.addEventListener("keyup", function(){
-            validate(subjectElement, /[a-z]{3,15}/);
-        });
-    
-    };
+};
